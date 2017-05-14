@@ -171,6 +171,7 @@ body {
 .slider-for__title {
     position: absolute;
     top: 86px;
+    margin: 0;
     left: 0;
     right: 0;
     text-align: center;
@@ -181,14 +182,7 @@ body {
     color: white;
     text-transform: uppercase;
 }
-.slider-for__buttons {
-    position: absolute;
-    bottom: 132px;
-    text-align: center;
-    z-index: 3;
-    left: 0;
-    right: 0;
-}
+
 .slider-for__button {
     width: 170px;
     border-radius: 5px;
@@ -213,12 +207,19 @@ body {
 
 .slider-for__button--green {
     background-color: #89ca62;
-    margin-right: 22px;
     padding: 20px 24px 20px 17px;
+    top: 150px;
+    position: absolute;
+    z-index: 3;
+    left: 37%;
 }
 .slider-for__button--blue {
     background-color: #14b9d5;
     padding: 20px 28px 20px 35px;
+    top: 150px;
+    position: absolute;
+    z-index: 3;
+    right: 40%;
 }
 .slider-nav__title {
     position: absolute;
@@ -525,6 +526,29 @@ left: 45px;
 
 .zoom-size__image2 {
 right: 45px;
+}
+
+ .grid-fancy__small-arrow {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #14b9d5;
+    color: white;
+    position: absolute;
+    border-radius: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 5px;
+    opacity: 0;
+}
+
+.grid-fancy__item:hover .grid-fancy__small-arrow {
+    opacity: 1;
+    transition: 0.3s; 
 }
 
 /*-----------------------------Advertisement--------------------*/
